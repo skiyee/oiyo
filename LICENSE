@@ -1,0 +1,183 @@
+oiyo 商业软件许可协议 / oiyo Commercial Software License Agreement
+
+最后更新：2026-04-08
+Last Updated: 2026-04-08
+作者：skiyee
+Author: skiyee
+官网：https://oiyo.pages.dev
+Website: https://oiyo.pages.dev
+
+请在安装、复制、分发或使用 OIYO 前，请先阅读本协议。
+PLEASE READ THIS AGREEMENT BEFORE INSTALLING, COPYING, DISTRIBUTING, OR USING OIYO.
+
+安装、复制、分发或使用 OIYO，即表示你同意受本协议约束。
+BY INSTALLING, COPYING, DISTRIBUTING, OR USING OIYO, YOU AGREE TO BE BOUND BY THIS AGREEMENT.
+
+1. 定义 / DEFINITIONS
+
+“oiyo” 指由许可方提供的软件包、编译产物、类型定义、文档、示例、发布包及相关材料。
+"oiyo" means the software packages, compiled artifacts, type definitions, documentation, examples, release bundles, and related materials provided by the Licensor.
+
+“许可方”指 oiyo 的版权所有人或其授权主体。
+"Licensor" means the copyright owner of oiyo or its authorized entity.
+
+“被许可方”指安装、使用、评估或商业化使用 oiyo 的个人、团队或机构。
+"Licensee" means any individual, team, or organization that installs, evaluates, or uses oiyo.
+
+2. 授权范围 / LICENSE GRANT
+
+在遵守本协议及适用商业订单、报价单或企业协议的前提下，许可方授予被许可方一项有限的、不可转让的、不可再许可的、可撤销的使用权，用于：
+
+1) 安装和运行 oiyo 的官方发布版本；
+2) 在被许可方自身项目中进行内部开发和集成；
+3) 基于公开文档和示例评估 oiyo 的适用性；
+
+Subject to this Agreement and any applicable commercial order or enterprise agreement, the Licensor grants the Licensee a limited, non-transferable, non-sublicensable, revocable license to:
+
+1) install and run officially distributed versions of oiyo.
+2) use oiyo for internal development and integration in the Licensee's own projects.
+3) evaluate oiyo based on public documentation and examples.
+
+3. 不授予的权利 / NO RIGHTS GRANTED
+
+除本协议明确授予外，许可方未授予任何其他权利，包括但不限于：
+
+1) 源代码访问权;
+2) 源代码修改权;
+3) 再分发权;
+4) 再销售权;
+5) 商标使用权;
+6) 任何未明确授予的知识产权许可;
+
+Except as expressly granted in this Agreement, no other rights are granted, including without limitation:
+
+1) access to source code;
+2) rights to modify source code;
+3) redistribution rights;
+4) resale rights;
+5) trademark rights;
+6) any intellectual property rights not expressly granted;
+
+4. 使用限制 / RESTRICTIONS
+
+除非法律强制允许或许可方书面同意，被许可方不得：
+
+1) 以源码、半源码、解包产物或其他形式公开、转让、出售或再分发 oiyo；
+2) 将 oiyo 作为独立产品、框架、模板包或平台能力再次对外销售；
+3) 冒充官方版本，或以 oiyo 品牌、近似品牌、官方兼容品牌进行商业包装；
+4) 披露非公开实现细节、内部支持材料、私下交付文档或专有方案；
+5) 逆向工程、反编译、反汇编、提取或分析受保护的内部实现；
+6) 将 oiyo 或相关材料用于训练、微调、评估、检索增强或改进任何 AI、LLM 或机器学习系统；
+
+Unless expressly permitted by law or in writing by the Licensor, the Licensee may not:
+
+1) publish, transfer, sell, or redistribute oiyo in source, reconstructed, unpacked, or similar form;
+2) resell oiyo as a standalone framework, toolkit, template package, or platform capability;
+3) market any fork, derivative, or repackaged offering as an official or confusingly similar oiyo offering;
+4) disclose non-public implementation details, support materials, private delivery documents, or proprietary solution content;
+5) reverse engineer, decompile, disassemble, extract, or analyze protected internal implementation details;
+6) use oiyo or related materials to train, fine-tune, evaluate, retrieve, or improve any AI, LLM, or machine learning system;
+
+5. 试用与商用 / EVALUATION AND COMMERCIAL USE
+
+被许可方可以基于官方安装包、文档和示例进行试用与技术评估。
+
+除另有书面约定外，项目级接入支持、迁移服务、兼容性排查、远程诊断、优先修复、企业群支持、定制开发及其他增值服务，不包含在基础许可中。
+
+The Licensee may evaluate oiyo based on official packages, documentation, and examples.
+
+Unless otherwise agreed in writing, project onboarding, migration services, compatibility diagnosis, remote troubleshooting, priority fixes, enterprise support channels, custom development, and other value-added services are not included in the base license.
+
+6. 支持边界 / SUPPORT BOUNDARY
+
+免费渠道通常仅用于：
+
+1) 文档与标准用法说明；
+2) 最小复现下的框架级缺陷反馈；
+
+以下事项属于商业支持范围：
+
+1) 项目接入问题；
+2) 历史项目迁移；
+3) uni、vite 或 node 版本兼容问题；
+4) HMR、构建、转换异常排查；
+5) 权限、鉴权、中间件、企业方案接入；
+6) 项目结构治理与定制需求；
+
+Free channels are generally limited to:
+
+1) documentation and standard usage guidance;
+2) reproducible framework-level defect reports with a minimal reproduction;
+
+The following are commercial support matters:
+
+1) project onboarding issues;
+2) migration of existing projects;
+3) uni, vite, or node compatibility analysis;
+4) HMR, build, and transformation issue diagnosis;
+5) auth, permission, middleware, and enterprise solution integration; 
+6) project structure governance and custom requests;
+
+7. 知识产权 / OWNERSHIP
+
+oiyo 及其相关文档、发布包、品牌标识、设计方案、实现细节及一切相关知识产权，均归许可方所有。
+
+All rights, title, and interest in oiyo, including documentation, release bundles, branding, design, implementation details, and related intellectual property, remain with the Licensor.
+
+8. 商标 / TRADEMARKS
+
+本协议不授予被许可方使用 “oiyo”、相关 logo、项目名称、品牌视觉或其他标识进行产品命名、营销、认证背书或官方化表达的权利。
+
+This Agreement does not grant any right to use "oiyo", its logos, project names, visual identity, or related marks for naming, marketing, endorsement, or implying official status.
+
+9. 免责声明 / DISCLAIMER
+
+除非另有书面协议，oiyo 按“现状”提供。许可方不对适销性、特定用途适用性、不中断运行、无错误或特定兼容结果作出明示或默示保证。
+
+Unless otherwise agreed in writing, oiyo is provided on an "AS IS" basis without express or implied warranties, including merchantability, fitness for a particular purpose, uninterrupted operation, error-free performance, or compatibility guarantees.
+
+10. 责任限制 / LIMITATION OF LIABILITY
+
+在法律允许的最大范围内，许可方不对任何间接损失、附带损失、特别损失、后果性损失、惩罚性损失、利润损失、收入损失、数据损失或业务中断承担责任；对于未向许可方支付任何费用的被许可方，许可方亦不承担任何赔偿责任。
+
+如因适用法律规定许可方仍需承担责任，许可方在任何情形下的累计责任总额，以被许可方在相关许可或服务下过去 6 个月实际支付给许可方的金额为上限。
+
+To the maximum extent permitted by applicable law, the Licensor shall not be liable for any indirect, incidental, special, consequential, punitive, exemplary, lost profits, lost revenue, loss of data, or business interruption damages; and with respect to any Licensee that has paid no fees to the Licensor, the Licensor shall have no liability for any damages, compensation, or other monetary remedies.
+
+If, notwithstanding the foregoing, the Licensor is required by applicable law to bear liability, the Licensor's aggregate liability in all circumstances shall not exceed the amount actually paid by the Licensee to the Licensor for the relevant license or services during the preceding 6 months.
+
+11. 协议优先级 / ORDER OF PRECEDENCE
+
+如被许可方与许可方另行签署订单、报价单、企业协议、支持协议或定制开发合同，则该等书面协议优先于本协议。
+
+If the Licensee enters into a separate order, quotation, enterprise agreement, support agreement, or custom development contract with the Licensor, such written agreement shall prevail over this Agreement.
+
+12. 第三方组件 / THIRD-PARTY COMPONENTS
+
+oiyo 可能依赖、调用、集成或与第三方软件、运行时、SDK、插件、框架或服务协同工作，包括但不限于 uni-app、@dcloudio/*、Vue 及其相关工具。
+
+除 oiyo 自有原创部分外，任何第三方组件的知识产权、许可证和使用限制，均归其各自权利人所有并受其各自协议约束。本协议不授予被许可方任何超出第三方原始许可范围之外的额外权利，也不替代任何第三方协议。
+
+如被许可方使用相关第三方组件，应自行确保其使用方式符合对应的开源许可证、商业条款、平台规则及官方使用要求。
+
+oiyo may rely on, call, integrate with, or work alongside third-party software, runtimes, SDKs, plugins, frameworks, or services, including but not limited to uni-app, @dcloudio/*, Vue, and related tooling.
+
+Except for oiyo's own original works, the intellectual property rights, licenses, and usage restrictions of any third-party components remain with their respective rights holders and are governed by their own terms. This Agreement does not grant the Licensee any rights beyond the original scope of such third-party licenses, nor does it replace any third-party agreement.
+
+If the Licensee uses any such third-party components, the Licensee is solely responsible for ensuring that such use complies with the applicable open-source licenses, commercial terms, platform rules, and official usage requirements.
+
+13. 联系方式 / CONTACT
+
+商业授权、企业支持、再分发授权、合作或品牌使用申请，可通过以下方式联系许可方：
+
+微信/QQ: 319619193
+邮箱: 319619193@qq.com
+GitHub: https://github.com/skiyee
+
+For commercial licensing, enterprise support, redistribution approval, partnership, or trademark use requests, you may contact the Licensor via:
+
+WeChat/QQ: 319619193
+Email: 319619193@qq.com
+GitHub: https://github.com/skiyee
+
+Copyright (c) 2026 skiyee. All rights reserved.

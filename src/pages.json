@@ -1,0 +1,17 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "layout": "tabbar",
+      "style": {
+        "navigationBarTitleText": "首页 - Oiyo"
+      }
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "我的 - Oiyo"
+      }
+    }
+  ]
+}

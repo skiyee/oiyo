@@ -1,0 +1,41 @@
+{
+  "name": "@skiyee/oiyo",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "一个以融合AI协作，提升开发体验，降低心智成本为三大理念的 UniApp 增强型工程框架",
+  "author": {
+    "name": "skiyee",
+    "email": "319619193@qq.com",
+    "url": "https://skiyee.pages.dev"
+  },
+  "funding": "https://github.com/skiyee/oiyo",
+  "homepage": "https://oiyo.pages.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skiyee/oiyo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skiyee/oiyo/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0<22",
+    "pnpm": ">=8"
+  },
+  "scripts": {
+    "dev": "oiyo dev",
+    "build": "oiyo build",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "oiyo prepare"
+  },
+  "dependencies": {
+    "@skiyee/oiyo": "latest"
+  },
+  "devDependencies": {
+    "@skiyee/eslint-config": "^0.1.0",
+    "@types/node": "^22.15.18",
+    "eslint": "^9.39.4",
+    "typescript": "^5.9.3",
+    "uni-unocss": "^1.0.2",
+    "vite": "5.2.8"
+  }
+}

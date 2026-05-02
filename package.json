@@ -18,13 +18,13 @@
     "url": "https://github.com/skiyee/oiyo/issues"
   },
   "engines": {
-    "node": ">=18.0.0<22",
+    "node": ">=18.0.0 <22.0.0",
     "pnpm": ">=8"
   },
   "scripts": {
     "dev": "oiyo dev",
     "build": "oiyo build",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "vue-tsc --noEmit",
     "postinstall": "oiyo prepare"
   },
   "dependencies": {
@@ -36,6 +36,13 @@
     "eslint": "^9.39.4",
     "typescript": "^5.9.3",
     "uni-unocss": "^1.0.2",
-    "vite": "5.2.8"
+    "vite": "5.2.8",
+    "vue-tsc": "^3.2.7"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "core-js",
+      "esbuild"
+    ]
   }
 }

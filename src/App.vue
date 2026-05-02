@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onLaunch, ref } from '@skiyee/oiyo/runtime'
-
 const { title, count, increment } = defineRootContext(() => {
   const title = ref('Hello Oiyo')
   const count = ref(2)

@@ -1,6 +1,4 @@
-<script setup>
-import { onLoad, ref } from '@skiyee/oiyo/runtime'
-
+<script setup lang="ts">
 definePageMeta({
   layout: 'tabbar',
   style: {

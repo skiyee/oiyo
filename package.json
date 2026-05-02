@@ -1,7 +1,7 @@
 {
   "name": "@skiyee/oiyo",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.1.2",
   "description": "一个以融合AI协作，提升开发体验，降低心智成本为三大理念的 UniApp 增强型工程框架",
   "author": {
     "name": "skiyee",

@@ -13,5 +13,18 @@
         "navigationBarTitleText": "我的 - Oiyo"
       }
     }
+  ],
+  "subPackages": [
+    {
+      "root": "packages/user",
+      "pages": [
+        {
+          "path": "pages/list/index",
+          "style": {
+            "navigationBarTitleText": "User分包 - Oiyo"
+          }
+        }
+      ]
+    }
   ]
 }

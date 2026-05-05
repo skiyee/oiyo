@@ -12,8 +12,12 @@ onLoad(() => {
 
 const title = ref('Hello')
 
-function jump() {
+function jumpMy() {
   uni.navigateTo({ url: '/pages/my/index' })
+}
+
+function jumpPackage() {
+  uni.navigateTo({ url: '/packages/user/pages/list/index' })
 }
 </script>
 
@@ -41,9 +45,14 @@ function jump() {
       <view class="my-[28rpx] rounded-[18rpx] bg-[#ffffff] px-[22rpx] py-[18rpx] text-[24rpx] text-[#8d6736] leading-[1.7]">
         <text>当前页面声明了 `layout: 'tabbar'`，所以会渲染在 tabbar 布局内部。</text>
       </view>
-      <button type="primary" @click="jump">
-        跳转到我的页
-      </button>
+      <view class="flex gap-3">
+        <button type="primary" @click="jumpMy">
+          跳转到我的页
+        </button>
+        <button type="primary" @click="jumpPackage">
+          跳转到分包页
+        </button>
+      </view>
     </view>
   </view>
 </template>

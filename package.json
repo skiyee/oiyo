@@ -42,7 +42,8 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "core-js",
-      "esbuild"
+      "esbuild",
+      "unrs-resolver"
     ]
   }
 }

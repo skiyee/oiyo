@@ -4,14 +4,14 @@ oiyo 商业软件许可协议 / oiyo Commercial Software License Agreement
 Last Updated: 2026-04-08
 作者：skiyee
 Author: skiyee
-官网：https://oiyo.pages.dev
-Website: https://oiyo.pages.dev
+官网：https://oiyo.js.org
+Website: https://oiyo.js.org
 
-请在安装、复制、分发或使用 oiyo 前，请先阅读本协议。
-PLEASE READ THIS AGREEMENT BEFORE INSTALLING, COPYING, DISTRIBUTING, OR USING oiyo.
+请在安装、复制、分发或使用 OIYO 前，请先阅读本协议。
+PLEASE READ THIS AGREEMENT BEFORE INSTALLING, COPYING, DISTRIBUTING, OR USING OIYO.
 
-安装、复制、分发或使用 oiyo，即表示你同意受本协议约束。
-BY INSTALLING, COPYING, DISTRIBUTING, OR USING oiyo, YOU AGREE TO BE BOUND BY THIS AGREEMENT.
+安装、复制、分发或使用 OIYO，即表示你同意受本协议约束。
+BY INSTALLING, COPYING, DISTRIBUTING, OR USING OIYO, YOU AGREE TO BE BOUND BY THIS AGREEMENT.
 
 1. 定义 / DEFINITIONS
 
@@ -80,13 +80,21 @@ Unless expressly permitted by law or in writing by the Licensor, the Licensee ma
 
 5. 试用与商用 / EVALUATION AND COMMERCIAL USE
 
-被许可方可以基于官方安装包、文档和示例进行试用与技术评估。
+被许可方可以基于 oiyo 的官方发布版本、文档和示例进行试用、评估、测试及内部验证。
 
-除另有书面约定外，项目级接入支持、迁移服务、兼容性排查、远程诊断、优先修复、企业群支持、定制开发及其他增值服务，不包含在基础许可中。
+在遵守本协议的前提下，被许可方可以在其自有项目中将 oiyo 用于商业开发、集成、构建、部署和运营，包括个人开发者、团队及企业客户的商业项目。
 
-The Licensee may evaluate oiyo based on official packages, documentation, and examples.
+前述商用仅限于将 oiyo 作为被许可方自有项目的一部分进行使用，不包括将 oiyo 自身或其相关材料作为独立产品、模板包、SDK、平台能力、可再分发组件或其他可单独提供的交付物对外提供、转让、出售、授权或再销售，除非许可方另行书面同意。
 
-Unless otherwise agreed in writing, project onboarding, migration services, compatibility diagnosis, remote troubleshooting, priority fixes, enterprise support channels, custom development, and other value-added services are not included in the base license.
+除另有书面约定外，项目级协助接入、迁移服务、兼容性排查、远程诊断、优先修复、企业群支持、定制开发及其他增值服务，不包含在基础许可中。
+
+The Licensee may use oiyo for trial, evaluation, testing, and internal validation based on its officially distributed versions, documentation, and examples.
+
+Subject to this Agreement, the Licensee may use oiyo in the commercial development, integration, building, deployment, and operation of the Licensee's own projects, including commercial projects of individual developers, teams, and enterprises.
+
+Such commercial use is limited to using oiyo as part of the Licensee's own projects and does not include providing, transferring, selling, licensing, or reselling oiyo itself or related materials as a standalone product, template package, SDK, platform capability, redistributable component, or other separately deliverable offering, unless otherwise approved in writing by the Licensor.
+
+Unless otherwise agreed in writing, project onboarding and integration assistance, migration services, compatibility diagnosis, remote troubleshooting, priority fixes, enterprise support channels, custom development, and other value-added services are not included in the base license.
 
 6. 支持边界 / SUPPORT BOUNDARY
 
@@ -97,7 +105,7 @@ Unless otherwise agreed in writing, project onboarding, migration services, comp
 
 以下事项属于商业支持范围：
 
-1) 项目接入问题；
+1) 项目协助接入；
 2) 历史项目迁移；
 3) uni、vite 或 node 版本兼容问题；
 4) HMR、构建、转换异常排查；
@@ -111,7 +119,7 @@ Free channels are generally limited to:
 
 The following are commercial support matters:
 
-1) project onboarding issues;
+1) project onboarding and integration assistance;
 2) migration of existing projects;
 3) uni, vite, or node compatibility analysis;
 4) HMR, build, and transformation issue diagnosis;

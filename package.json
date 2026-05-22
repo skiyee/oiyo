@@ -18,7 +18,7 @@
     "url": "https://github.com/skiyee/oiyo/issues"
   },
   "engines": {
-    "node": ">=18.0.0 <22.0.0",
+    "node": ">=18.0.0",
     "pnpm": ">=8"
   },
   "scripts": {
@@ -45,5 +45,11 @@
       "esbuild",
       "unrs-resolver"
     ]
+  },
+  "overrides": {
+    "unconfig": "7.3.2"
+  },
+  "resolutions": {
+    "unconfig": "7.3.2"
   }
 }

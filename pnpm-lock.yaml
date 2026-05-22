@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  unconfig: 7.3.2
+
 importers:
 
   .:
@@ -1354,6 +1357,9 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
+  '@quansync/fs@0.1.6':
+    resolution: {integrity: sha512-zoA8SqQO11qH9H8FCBR7NIbowYARIPmBz3nKjgAaOUDi/xPAAu1uAgebtV7KXHTc6CDZJVRZ1u4wIGvY5CWYaw==}
+
   '@rollup/pluginutils@5.1.0':
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
     engines: {node: '>=14.0.0'}
@@ -1665,13 +1671,13 @@ packages:
       typescript: ^5.0.0
       vue: ^3.0.0
 
-  '@uni-helper/uni-types@1.0.0-alpha.8':
-    resolution: {integrity: sha512-8cVEKyy7Le2QHuYusEJI8dr6PojT2XxWlEnT1xJlERJoT4+GxUSO42LYKR9CEZgm7hRTN8I6s5h9w0KnbUcYtg==}
+  '@uni-helper/uni-types@1.0.0':
+    resolution: {integrity: sha512-FnLZ9X2UWj0NuIk544pWi6CcHneXGXZYnAtRWpWuwOfVcBuBYcX5BnIYWVWgYeTu7mqN1BgNj3Bv7ZHi+BtYFg==}
     engines: {node: '>=14.18'}
     peerDependencies:
-      '@uni-helper/uni-app-types': 1.0.0-alpha.8
-      '@uni-helper/uni-cloud-types': 1.0.0-alpha.8
-      '@uni-helper/uni-ui-types': 1.0.0-alpha.8
+      '@uni-helper/uni-app-types': 1.0.0
+      '@uni-helper/uni-cloud-types': 1.0.0
+      '@uni-helper/uni-ui-types': 1.0.0
       typescript: ^5.0.0
       vue: ^3.0.0
 
@@ -3960,6 +3966,9 @@ packages:
   quansync@0.2.11:
     resolution: {integrity: sha512-AifT7QEbW9Nri4tAwR5M/uzpBuqfZf+zwaEM/QkzEjj7NBuFD2rBuy0K3dE+8wltbezDV7JMA0WfnCPYRSYbXA==}
 
+  quansync@0.3.0:
+    resolution: {integrity: sha512-dr5GyvHkdDbrAeXyl0MGi/jWKM6+/lZbNFVe+Ff7ivJi4RVry7O091VfXT/wuAVcF3FwNr86nwZVdxx8nELb2w==}
+
   querystringify@2.2.0:
     resolution: {integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==}
 
@@ -4412,8 +4421,8 @@ packages:
   ufo@1.6.4:
     resolution: {integrity: sha512-JFNbkD1Svwe0KvGi8GOeLcP4kAWQ609twvCdcHxq1oSL8svv39ZuSvajcD8B+5D0eL4+s1Is2D/O6KN3qcTeRA==}
 
-  unconfig@7.0.0:
-    resolution: {integrity: sha512-G5CJSoG6ZTxgzCJblEfgpdRK2tos9+UdD2WtecDUVfImzQ0hFjwpH5RVvGMhP4pRpC9ML7NrC4qBsBl0Ttj35A==}
+  unconfig@7.3.2:
+    resolution: {integrity: sha512-nqG5NNL2wFVGZ0NA/aCFw0oJ2pxSf1lwg4Z5ill8wd7K4KX/rQbHlwbh+bjctXL5Ly1xtzHenHGOK0b+lG6JVg==}
 
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
@@ -6962,7 +6971,7 @@ snapshots:
       '@dcloudio/uni-mp-xhs': 3.0.0-4080720251210001(postcss@8.5.14)(rollup@4.60.3)(vue@3.4.21(typescript@5.9.3))
       '@dcloudio/uni-quickapp-webview': 3.0.0-4080720251210001(postcss@8.5.14)(rollup@4.60.3)(vue@3.4.21(typescript@5.9.3))
       '@dcloudio/uni-stacktracey': 3.0.0-4080720251210001
-      '@uni-helper/uni-types': 1.0.0-alpha.8(@uni-helper/uni-app-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(@uni-helper/uni-cloud-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(@uni-helper/uni-ui-types@1.0.0-alpha.8(@uni-helper/uni-app-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3))
+      '@uni-helper/uni-types': 1.0.0(@uni-helper/uni-app-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(@uni-helper/uni-cloud-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(@uni-helper/uni-ui-types@1.0.0-alpha.8(@uni-helper/uni-app-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3))
       '@vue/runtime-core': 3.4.21
       '@vue/shared': 3.4.21
       vite: 5.2.8(@types/node@22.19.17)(terser@5.46.2)
@@ -7006,6 +7015,10 @@ snapshots:
   '@pkgr/core@0.2.9': {}
 
   '@polka/url@1.0.0-next.29': {}
+
+  '@quansync/fs@0.1.6':
+    dependencies:
+      quansync: 0.3.0
 
   '@rollup/pluginutils@5.1.0(rollup@4.60.3)':
     dependencies:
@@ -7355,7 +7368,7 @@ snapshots:
       typescript: 5.9.3
       vue: 3.4.21(typescript@5.9.3)
 
-  '@uni-helper/uni-types@1.0.0-alpha.8(@uni-helper/uni-app-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(@uni-helper/uni-cloud-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(@uni-helper/uni-ui-types@1.0.0-alpha.8(@uni-helper/uni-app-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3))':
+  '@uni-helper/uni-types@1.0.0(@uni-helper/uni-app-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(@uni-helper/uni-cloud-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(@uni-helper/uni-ui-types@1.0.0-alpha.8(@uni-helper/uni-app-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3)))(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3))':
     dependencies:
       '@uni-helper/uni-app-types': 1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3))
       '@uni-helper/uni-cloud-types': 1.0.0-alpha.8(typescript@5.9.3)(vue@3.4.21(typescript@5.9.3))
@@ -7398,7 +7411,7 @@ snapshots:
   '@unocss/config@66.0.0':
     dependencies:
       '@unocss/core': 66.0.0
-      unconfig: 7.0.0
+      unconfig: 7.3.2
 
   '@unocss/core@66.0.0': {}
 
@@ -9974,6 +9987,8 @@ snapshots:
 
   quansync@0.2.11: {}
 
+  quansync@0.3.0: {}
+
   querystringify@2.2.0: {}
 
   queue-microtask@1.2.3: {}
@@ -10443,11 +10458,12 @@ snapshots:
 
   ufo@1.6.4: {}
 
-  unconfig@7.0.0:
+  unconfig@7.3.2:
     dependencies:
-      '@antfu/utils': 8.1.1
+      '@quansync/fs': 0.1.6
       defu: 6.1.7
       jiti: 2.6.1
+      quansync: 0.2.11
 
   undici-types@6.21.0: {}
 

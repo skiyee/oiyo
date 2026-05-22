@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "editorConfig.editorConfig",
+    "vue.volar",
+    "antfu.iconify",
+    "antfu.unocss"
+  ]
+}

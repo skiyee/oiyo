@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { title, count, increment } = defineRootContext(() => {
+const { title, count, increment, isDark } = defineRootContext(() => {
   const title = ref('Hello Oiyo')
   const count = ref(2)
 
@@ -7,19 +7,33 @@ const { title, count, increment } = defineRootContext(() => {
     count.value += 3
   }
 
-  return { title, count, increment }
+  const isDark = useSystemDark()
+
+  return { title, count, increment, isDark }
 })
 
+async function mockSleep() {
+  // eslint-disable-next-line no-console
+  console.log('模拟阻止 1s 开始', Date.now())
+  await sleep(1000)
+  // eslint-disable-next-line no-console
+  console.log('模拟阻止 1s 结束', Date.now())
+}
+
 onLaunch(() => {
+  mockSleep()
+  // eslint-disable-next-line no-console
   console.log('App Launch, title:', title.value)
 })
 </script>
 
 <template>
   <view class="min-h-screen box-border bg-[linear-gradient(180deg,#eef4ff_0%,#f7f9fc_100%)] p-[28rpx]">
+    <NavBar />
+
     <view class="mt-[20rpx] rounded-[24rpx] border-[2rpx] border-solid border-[#c8d7ff] bg-[rgba(255,255,255,0.9)] p-[24rpx] shadow-[0_16rpx_36rpx_rgba(61,104,255,0.08)]">
       <text class="text-[24rpx] text-[#3d68ff] font-700 tracking-[4rpx]">
-        APP
+        APP - 当前系统主题为 {{ isDark ? 'dark' : 'light' }}
       </text>
       <text class="mt-[8rpx] block text-[30rpx] text-[#16213d] font-600">
         App.vue
@@ -46,5 +60,7 @@ onLaunch(() => {
         <OiyoPage />
       </view>
     </OiyoLayout>
+
+    <TabBar />
   </view>
 </template>

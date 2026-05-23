@@ -1,4 +1,14 @@
 {
+  "globalStyle": {
+    "backgroundColor": "#F8F8F8",
+    "backgroundColorTop": "#F8F8F8",
+    "backgroundColorBottom": "#F8F8F8",
+    "backgroundTextStyle": "dark",
+    "navigationStyle": "default",
+    "navigationBarTitleText": "@skiyee/oiyo",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#f8f8f8"
+  },
   "pages": [
     {
       "path": "pages/home/index",

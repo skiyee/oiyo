@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { title, count, increment, isDark } = defineRootContext(() => {
+const { title, count, increment, isDark, appStore } = defineRootContext(() => {
   const title = ref('Hello Oiyo')
   const count = ref(2)
 
@@ -9,7 +9,9 @@ const { title, count, increment, isDark } = defineRootContext(() => {
 
   const isDark = useSystemDark()
 
-  return { title, count, increment, isDark }
+  const appStore = useAppStore()
+
+  return { title, count, increment, isDark, appStore }
 })
 
 async function mockSleep() {
@@ -28,10 +30,10 @@ onLaunch(() => {
 </script>
 
 <template>
-  <view class="min-h-screen box-border bg-[linear-gradient(180deg,#eef4ff_0%,#f7f9fc_100%)] p-[28rpx]">
+  <view class="min-h-screen box-border bg-gradient-to-b from-sky-500 to-indigo-500 p-[28rpx]">
     <NavBar />
 
-    <view class="mt-[20rpx] rounded-[24rpx] border-[2rpx] border-solid border-[#c8d7ff] bg-[rgba(255,255,255,0.9)] p-[24rpx] shadow-[0_16rpx_36rpx_rgba(61,104,255,0.08)]">
+    <view class="rounded-[24rpx] border-[2rpx] border-solid border-[#c8d7ff] bg-[rgba(255,255,255,0.9)] p-[24rpx] shadow-[0_16rpx_36rpx_rgba(61,104,255,0.08)]">
       <text class="text-[24rpx] text-[#3d68ff] font-700 tracking-[4rpx]">
         APP - 当前系统主题为 {{ isDark ? 'dark' : 'light' }}
       </text>
@@ -60,6 +62,15 @@ onLaunch(() => {
         <OiyoPage />
       </view>
     </OiyoLayout>
+
+    <view class="mt-[24rpx] rounded-[24rpx] border-[2rpx] border-solid border-[#c8d7ff] bg-[rgba(255,255,255,0.9)] p-[24rpx] shadow-[0_16rpx_36rpx_rgba(61,104,255,0.08)]">
+      <text class="mt-[8rpx] block text-[30rpx] text-[#16213d] font-600">
+        {{ appStore.name }}
+      </text>
+      <text class="mt-[12rpx] block text-[26rpx] text-[#50607f] leading-[1.7]">
+        作者: {{ appStore.author }} 网站: {{ appStore.website }}
+      </text>
+    </view>
 
     <TabBar />
   </view>

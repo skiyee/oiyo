@@ -28,7 +28,8 @@
     "postinstall": "oiyo prepare"
   },
   "dependencies": {
-    "@skiyee/oiyo": "latest"
+    "@skiyee/oiyo": "latest",
+    "pinia": "2.3.1"
   },
   "devDependencies": {
     "@skiyee/eslint-config": "^0.1.0",

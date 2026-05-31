@@ -1,38 +1,36 @@
 {
   "globalStyle": {
-    "backgroundColor": "#F8F8F8",
-    "backgroundColorTop": "#F8F8F8",
-    "backgroundColorBottom": "#F8F8F8",
+    "backgroundColor": "#F8FAFC",
+    "backgroundColorTop": "#F8FAFC",
+    "backgroundColorBottom": "#F8FAFC",
     "backgroundTextStyle": "dark",
     "navigationStyle": "default",
-    "navigationBarTitleText": "@skiyee/oiyo",
+    "navigationBarTitleText": "skiyee-oiyo",
     "navigationBarTextStyle": "black",
-    "navigationBarBackgroundColor": "#f8f8f8"
+    "navigationBarBackgroundColor": "#F8FAFC"
   },
   "pages": [
     {
       "path": "pages/home/index",
+      "type": "home",
       "layout": "tabbar",
       "style": {
-        "navigationBarTitleText": "首页 - Oiyo"
+        "navigationBarTitleText": "首页 - skiyee-oiyo"
       }
     },
     {
       "path": "pages/my/index",
       "style": {
-        "navigationBarTitleText": "我的 - Oiyo"
+        "navigationBarTitleText": "我的 - skiyee-oiyo"
       }
     }
   ],
   "subPackages": [
     {
-      "root": "packages/user",
+      "root": "packages/root",
       "pages": [
         {
-          "path": "pages/list/index",
-          "style": {
-            "navigationBarTitleText": "User分包 - Oiyo"
-          }
+          "path": "pages/page/index"
         }
       ]
     }

@@ -1,58 +1,43 @@
 <script setup lang="ts">
 definePageMeta({
+  type: 'home',
   layout: 'tabbar',
   style: {
-    navigationBarTitleText: '首页 - Oiyo',
+    navigationBarTitleText: '首页 - skiyee-oiyo',
   },
 })
 
 onLoad(() => {
   // eslint-disable-next-line no-console
-  console.log('Page Load')
+  console.log('Home Page Load')
 })
-
-const title = ref('Hello')
 
 function jumpMy() {
   uni.navigateTo({ url: '/pages/my/index' })
 }
 
 function jumpPackage() {
-  uni.navigateTo({ url: '/packages/user/pages/list/index' })
+  uni.navigateTo({ url: '/packages/root/pages/page/index' })
 }
 </script>
 
 <template>
-  <view class="overflow-hidden rounded-[24rpx] border-[2rpx] border-solid border-[#f3c77d] bg-[#fffaf1]">
-    <view class="bg-[#fff1d6] p-[24rpx]">
-      <text class="block text-[22rpx] text-[#d17a00] font-700 tracking-[4rpx]">
-        PAGE
-      </text>
-      <text class="mt-[8rpx] block text-[34rpx] text-[#7a4300] font-700">
-        pages/home/index.vue
-      </text>
-      <text class="mt-[10rpx] block text-[24rpx] text-[#94653a] leading-[1.6]">
-        页面只负责自己的内容表达与交互逻辑。
-      </text>
+  <view class="overflow-hidden p-xs rounded-lg border border-solid border-orange-500 bg-orange-50">
+    <view class="flex flex-col">
+      <span class="text-xs text-orange-500 font-bold">PAGE</span>
+      <span class="text-base text-orange-700 font-bold">pages/home/index.vue</span>
+      <span class="mt-0.5 text-xs text-orange-700">页面只负责自己的内容表达与交互逻辑</span>
     </view>
 
-    <view class="flex flex-col items-center justify-center p-[28rpx_24rpx_36rpx]">
-      <image class="mb-[36rpx] h-[180rpx] w-[180rpx]" src="/static/logo.png" />
-      <view class="flex justify-center">
-        <text class="text-[36rpx] text-[#7a4300]">
-          {{ title }} Home Page
-        </text>
+    <view class="flex justify-center">
+      <image class="size-24 my-3xl" src="/static/logo.png" />
+    </view>
+    <view class="flex gap-3 w-full">
+      <view class="w-full py-xs rounded-md bg-orange-200 text-orange-800 text-center" @click="jumpMy">
+        跳转到我的页
       </view>
-      <view class="my-[28rpx] rounded-[18rpx] bg-[#ffffff] px-[22rpx] py-[18rpx] text-[24rpx] text-[#8d6736] leading-[1.7]">
-        <text>当前页面声明了 `layout: 'tabbar'`，所以会渲染在 tabbar 布局内部。</text>
-      </view>
-      <view class="flex gap-3">
-        <button type="primary" @click="jumpMy">
-          跳转到我的页
-        </button>
-        <button type="primary" @click="jumpPackage">
-          跳转到分包页
-        </button>
+      <view class="w-full py-xs rounded-md bg-orange-200 text-orange-800 text-center" @click="jumpPackage">
+        跳转到分包页
       </view>
     </view>
   </view>

@@ -30,38 +30,27 @@ onLaunch(() => {
 </script>
 
 <template>
-  <view class="min-h-screen box-border bg-gradient-to-b from-sky-500 to-indigo-500 p-[28rpx]">
+  <view class="box-border p-xs">
     <NavBar />
 
-    <view class="rounded-[24rpx] border-[2rpx] border-solid border-[#c8d7ff] bg-[rgba(255,255,255,0.9)] p-[24rpx] shadow-[0_16rpx_36rpx_rgba(61,104,255,0.08)]">
-      <text class="text-[24rpx] text-[#3d68ff] font-700 tracking-[4rpx]">
-        APP - 当前系统主题为 {{ isDark ? 'dark' : 'light' }}
-      </text>
-      <text class="mt-[8rpx] block text-[30rpx] text-[#16213d] font-600">
-        App.vue
-      </text>
-      <text class="mt-[12rpx] block text-[26rpx] text-[#50607f] leading-[1.7]">
-        这里放应用级状态、生命周期和包裹全部页面的视图骨架。
-      </text>
-    </view>
-
-    <view class="mt-[20rpx] flex items-center justify-between gap-[20rpx] rounded-[24rpx] border-[2rpx] border-solid border-[#c8d7ff] bg-[rgba(255,255,255,0.9)] p-[24rpx] shadow-[0_16rpx_36rpx_rgba(61,104,255,0.08)]">
-      <text class="text-[28rpx] text-[#22304f]">
-        {{ title }} / count: {{ count }}
-      </text>
-      <button class="inline-block mx-0" size="mini" @click="increment">
-        +3
-      </button>
-    </view>
-
-    <OiyoLayout>
-      <view class="mt-[24rpx] rounded-[24rpx] border-[2rpx] border-solid border-[#c8d7ff] bg-[rgba(255,255,255,0.9)] p-[20rpx] shadow-[0_16rpx_36rpx_rgba(61,104,255,0.08)]">
-        <view class="rounded-[18rpx] bg-[#edf2ff] px-[20rpx] py-[18rpx] text-[24rpx] text-[#5870b3]">
-          <text>下面区域由当前 layout 承载 page 内容</text>
-        </view>
-        <OiyoPage />
+    <view class="my-xs p-xs rounded-lg border border-solid border-violet-500 bg-violet-50">
+      <view class="flex flex-col">
+        <span class="text-xs text-violet-500 font-bold">APP - 当前系统主题为 {{ isDark ? 'dark' : 'light' }}</span>
+        <span class="text-base text-violet-700 font-bold">App.vue</span>
+        <span class="mt-0.5 text-xs text-violet-600">根部放应用级状态、生命周期和包裹全部页面的视图骨架</span>
       </view>
-    </OiyoLayout>
+
+      <OiyoLayout>
+        <OiyoPage />
+      </OiyoLayout>
+
+      <view class="mt-xs p-xs rounded-lg bg-violet-200 flex items-center justify-between">
+        <span class="text-sm text-violet-800">{{ title }} / count: {{ count }}</span>
+        <button class="inline-block mx-0 bg-violet-600 text-white" hover-class="bg-violet-900" size="mini" @click="increment">
+          +6
+        </button>
+      </view>
+    </view>
 
     <view class="mt-[24rpx] rounded-[24rpx] border-[2rpx] border-solid border-[#c8d7ff] bg-[rgba(255,255,255,0.9)] p-[24rpx] shadow-[0_16rpx_36rpx_rgba(61,104,255,0.08)]">
       <text class="mt-[8rpx] block text-[30rpx] text-[#16213d] font-600">
@@ -75,3 +64,9 @@ onLaunch(() => {
     <TabBar />
   </view>
 </template>
+
+<style>
+page {
+  background-color: #F1F5F9;
+}
+</style>

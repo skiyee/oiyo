@@ -1,17 +1,18 @@
 import { definePagesConfig } from '@skiyee/oiyo/config'
 
+// https://oiyo.js.org/docs/api/config/define-pages-config
 export default definePagesConfig({
   globalStyle: {
     // 页面背景配置
-    backgroundColor: '#F8F8F8',
-    backgroundColorTop: '#F8F8F8',
-    backgroundColorBottom: '#F8F8F8',
+    backgroundColor: '#F8FAFC',
+    backgroundColorTop: '#F8FAFC',
+    backgroundColorBottom: '#F8FAFC',
     backgroundTextStyle: 'dark',
 
     // 导航栏配置
     navigationStyle: 'default',
-    navigationBarTitleText: '@skiyee/oiyo',
+    navigationBarTitleText: 'skiyee-oiyo',
     navigationBarTextStyle: 'black',
-    navigationBarBackgroundColor: '#f8f8f8',
+    navigationBarBackgroundColor: '#F8FAFC',
   },
 })

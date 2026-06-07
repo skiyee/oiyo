@@ -3,6 +3,10 @@ definePageMeta({
   style: {
     navigationBarTitleText: '我的 - skiyee-oiyo',
   },
+  tab: {
+    index: 1,
+    text: '我的',
+  },
 })
 </script>
 

@@ -5,6 +5,10 @@ definePageMeta({
   style: {
     navigationBarTitleText: '首页 - skiyee-oiyo',
   },
+  tab: {
+    index: 0,
+    text: '首页',
+  },
 })
 
 onLoad(() => {
@@ -13,7 +17,7 @@ onLoad(() => {
 })
 
 function jumpMy() {
-  uni.navigateTo({ url: '/pages/my/index' })
+  uni.switchTab({ url: '/pages/my/index' })
 }
 
 function jumpPackage() {

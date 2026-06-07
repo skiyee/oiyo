@@ -16,12 +16,20 @@
       "layout": "tabbar",
       "style": {
         "navigationBarTitleText": "首页 - skiyee-oiyo"
+      },
+      "tab": {
+        "index": 0,
+        "text": "首页"
       }
     },
     {
       "path": "pages/my/index",
       "style": {
         "navigationBarTitleText": "我的 - skiyee-oiyo"
+      },
+      "tab": {
+        "index": 1,
+        "text": "我的"
       }
     }
   ],
@@ -34,5 +42,19 @@
         }
       ]
     }
-  ]
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "index": 0,
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "index": 1,
+        "text": "我的"
+      }
+    ]
+  }
 }

@@ -52,7 +52,7 @@ onLaunch(() => {
       </view>
     </view>
 
-    <view class="mt-[24rpx] rounded-[24rpx] border-[2rpx] border-solid border-[#c8d7ff] bg-[rgba(255,255,255,0.9)] p-[24rpx] shadow-[0_16rpx_36rpx_rgba(61,104,255,0.08)]">
+    <view class="my-[24rpx] rounded-[24rpx] border-[2rpx] border-solid border-[#c8d7ff] bg-[rgba(255,255,255,0.9)] p-[24rpx] shadow-[0_16rpx_36rpx_rgba(61,104,255,0.08)]">
       <text class="mt-[8rpx] block text-[30rpx] text-[#16213d] font-600">
         {{ appStore.name }}
       </text>

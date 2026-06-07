@@ -11,6 +11,8 @@ definePageMeta({
   },
 })
 
+const { title, increment } = useRootContext<{ title: Ref<string>; increment: () => void }>()
+
 onLoad(() => {
   // eslint-disable-next-line no-console
   console.log('Home Page Load')
@@ -30,7 +32,7 @@ function jumpPackage() {
     <view class="flex flex-col">
       <span class="text-xs text-orange-500 font-bold">PAGE</span>
       <span class="text-base text-orange-700 font-bold">pages/home/index.vue</span>
-      <span class="mt-0.5 text-xs text-orange-700">页面只负责自己的内容表达与交互逻辑</span>
+      <span class="mt-0.5 text-xs text-orange-700">页面中获取根部状态 title: {{ title }}</span>
     </view>
 
     <view class="flex justify-center">
@@ -43,6 +45,9 @@ function jumpPackage() {
       <view class="w-full py-xs rounded-md bg-orange-200 text-orange-800 text-center" @click="jumpPackage">
         跳转到分包页
       </view>
+    </view>
+    <view class="mt-3 w-full py-xs rounded-md bg-orange-200 text-orange-800 text-center" @click="increment">
+      页面级触发根部方法 +6
     </view>
   </view>
 </template>

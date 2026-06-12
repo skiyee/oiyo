@@ -28,20 +28,6 @@ Oiyo 是以融合AI协作，提升开发体验，降低心智成本为三大理�
 - 类型提示系统
 - 一站式团队服务
 
-<details>
-
-<summary>
-  <strong> (点击展开) 🫣 Oiyo 核心功能代码先知图</strong>
-</summary>
-<br/>
-<a href="https://oiyo.js.org" target="_blank">
-  <picture>
-    <img alt="@skiyee/oiyo" src="./.github/assets/example.png" width="1200px" height="auto">
-  </picture>
-</a>
-
-</details>
-
 ## 🎉 开始
 
 可以使用以下命令交互式的创建一个 starter 项目，其中包含了该基础模板
@@ -60,13 +46,25 @@ pnpm create oiyo@latest
 
 <img src="./.github/assets/qq-qrcode-1.png" alt="Qiyo 交流群" style="width: 280px; height: auto;">
 
-## 💝 联系方式
+## 💝 关于
 
-- 作者: `skiyee(sKy)`
-- 微信/QQ: `319619193`
-- 邮箱: `319619193@qq.com`
+**sky [Skiyee]** - 切图仔、全干攻城猫、轮子砖家
 
-## ⛽ 支持范畴
+| 平台      | 链接                                             |
+|-----------|--------------------------------------------------|
+| 🌐 官网   | [oiyo.js.org](https://oiyo.js.org/)              |
+| 🐧 QQ     | [319619193](https://oiyo.js.org/)                |
+| 🗻 掘金   | [skiyee](https://juejin.cn/user/300614247782265) |
+| 💬 公众号 | 微信搜「天空言码」或扫码关注 ↓                   |
+
+<img src="./.github/assets/wechat-qrcode-1.png" alt="公众号二维码" width="360">
+
+## 🔗 外链
+
+- [《在AI编程统治下，为什么UniApp开发更加需要这个框架？》- 掘金](https://juejin.cn/post/7637134822670532635)
+- [《UniApp:「App.vue不能写template」Oiyo: 怎么可能！》- 掘金](https://juejin.cn/post/7649976264929919028)
+
+## ⛽ 支持
 
 ### 免费支持
 
@@ -79,15 +77,11 @@ pnpm create oiyo@latest
 
 - 协助项目接入
 - 老项目迁移
-- 页面结构改造
+- 项目页面结构改造
 - 版本兼容排查
 - 编译、HMR、构建异常定位
 - 权限与中间件方案接入
 - 远程协助与定制开发
-
-## 🔗 外链
-
-[《在AI编程统治下，为什么UniApp开发更加需要这个框架？》- 掘金](https://juejin.cn/post/7637134822670532635)
 
 ## ⚖️ 许可
 

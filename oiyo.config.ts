@@ -13,4 +13,7 @@ export default defineOiyoConfig({
       // 'components/**/*.vue', 无需设置这一行 oiyo 内部已内置
     ],
   },
+  ide: {
+    open: true,
+  },
 })

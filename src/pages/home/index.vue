@@ -25,6 +25,23 @@ function jumpMy() {
 function jumpPackage() {
   uni.navigateTo({ url: '/packages/root/pages/page/index' })
 }
+
+async function mockRequest() {
+  // 由于上游模拟的地址无法调通，需要换成真实 API 进行测试，这里始终会显示 500
+  const user = await createUser({
+    id: 10,
+    username: 'theUser',
+    firstName: 'John',
+    lastName: 'James',
+    email: 'john@email.com',
+    password: '12345',
+    phone: '12345',
+    userStatus: 1,
+  })
+
+  // eslint-disable-next-line no-console
+  console.log(user)
+}
 </script>
 
 <template>
@@ -48,6 +65,9 @@ function jumpPackage() {
     </view>
     <view class="mt-3 w-full py-xs rounded-md bg-orange-200 text-orange-800 text-center" @click="increment">
       页面级触发根部方法 +6
+    </view>
+    <view class="mt-3 w-full py-xs rounded-md bg-orange-200 text-orange-800 text-center" @click="mockRequest">
+      触发模拟网络请求
     </view>
   </view>
 </template>

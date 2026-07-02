@@ -6,6 +6,7 @@ export default defineOiyoConfig({
     apis: [
       'pinia',
       // 'composables/*.ts', 无需设置这一行 oiyo 内部已内置
+      'apis/*.ts',
       'stores/*.ts',
       'utils/*.ts', // 这将会扫描 <srcDir>/utils 下的第一层 ts 文件
     ],

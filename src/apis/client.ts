@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 export const PetClient = http.create({
-  baseURL: 'https://petstore3.swagger.io/api/v3',
+  baseURL: import.meta.env.VITE_API_URL,
   onRequest: (c) => {
     console.log('onRequest hook: ', c)
   },

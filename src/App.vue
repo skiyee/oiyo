@@ -25,7 +25,14 @@ async function mockSleep() {
 onLaunch(() => {
   mockSleep()
   // eslint-disable-next-line no-console
-  console.log('App Launch, title:', title.value)
+  console.log(
+    'App Launch',
+    `title: ${title.value} / `,
+    `名称: ${import.meta.env.VITE_OIYO_NAME} / `,
+    `作者: ${import.meta.env.VITE_OIYO_AUTHOR} / `,
+    `网站: ${import.meta.env.VITE_OIYO_WEBSITE}`,
+    `网站: ${import.meta.env.VITE_API_URL}`,
+  )
 })
 </script>
 

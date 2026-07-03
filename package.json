@@ -24,6 +24,7 @@
   "scripts": {
     "dev": "oiyo dev",
     "build": "oiyo build",
+    "build:test": "oiyo build --mode test",
     "typecheck": "vue-tsc --noEmit",
     "postinstall": "oiyo prepare"
   },
@@ -32,7 +33,7 @@
     "pinia": "2.3.1"
   },
   "devDependencies": {
-    "@skiyee/eslint-config": "^0.2.0",
+    "@skiyee/eslint-config": "^0.2.1",
     "@types/node": "^22.15.18",
     "eslint": "^9.39.4",
     "typescript": "^5.9.3",

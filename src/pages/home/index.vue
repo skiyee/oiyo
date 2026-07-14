@@ -11,7 +11,7 @@ definePageMeta({
   },
 })
 
-const { title, increment } = useRootContext<{ title: Ref<string>; increment: () => void }>()
+const { title, increment } = useRootContext<RootContext>()
 
 onLoad(() => {
   // eslint-disable-next-line no-console

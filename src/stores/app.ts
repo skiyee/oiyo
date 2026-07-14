@@ -5,3 +5,5 @@ export const useAppStore = defineStore('app', () => {
 
   return { name, author, website }
 })
+
+export type AppStore = ReturnType<typeof useAppStore>

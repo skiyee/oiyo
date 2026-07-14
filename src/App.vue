@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { title, count, increment, isDark, appStore } = defineRootContext(() => {
+const { title, count, increment, isDark, appStore } = defineRootContext<RootContext>(() => {
   const title = ref('Hello Oiyo')
   const count = ref(2)
 

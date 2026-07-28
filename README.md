@@ -58,7 +58,13 @@
 - Node.js 18+
 - 包管理器推荐 pnpm < 11
 
-### 2. 安装依赖
+### 2. 创建项目
+
+```bash
+pnpm create oiyo <project-name> --template wot-starter
+```
+
+### 3. 安装依赖
 
 ```bash
 pnpm install
@@ -66,7 +72,7 @@ pnpm install
 
 安装完成后会自动执行 `oiyo prepare`，生成类型与路由元数据。
 
-### 3. 开发/构建
+### 4. 开发/构建
 
 ```bash
 # 默认开发

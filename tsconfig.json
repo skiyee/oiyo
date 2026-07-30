@@ -1,0 +1,11 @@
+{
+  "extends": "./.oiyo/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "vite/client"
+    ],
+    // unibest 底壳代码在无 noUncheckedIndexedAccess 的前提下编写，
+    // 关闭它以保持迁移代码原样编译（oiyo 生成的 tsconfig 默认开启）。
+    "noUncheckedIndexedAccess": false
+  }
+}

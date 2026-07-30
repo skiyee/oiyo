@@ -1,0 +1,75 @@
+{
+  "globalStyle": {
+    "backgroundColor": "#FFFFFF",
+    "navigationStyle": "default",
+    "navigationBarTitleText": "oiyo-unibest",
+    "navigationBarBackgroundColor": "#F8FAFC",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#999999",
+    "selectedColor": "#018d71",
+    "backgroundColor": "#F8F8F8",
+    "borderStyle": "black",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/index"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/index"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/me/index"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "type": "home",
+      "layout": "tabbar",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/about/index",
+      "layout": "tabbar",
+      "style": {
+        "navigationBarTitleText": "关于"
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/me/index",
+      "layout": "tabbar",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "packages/name",
+      "pages": [
+        {
+          "path": "pages/page/index"
+        }
+      ]
+    }
+  ]
+}

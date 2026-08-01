@@ -72,8 +72,7 @@
   "mp-alipay": {
     "usingComponents": true,
     "compileOptions": {
-      "globalObjectMode": "enable",
-      "treeShaking": true
+      "globalObjectMode": "enable"
     }
   },
   "mp-baidu": {

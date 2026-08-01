@@ -27,6 +27,7 @@ export default definePagesConfig({
   },
   tabBar: {
     custom: true,
+    customize: true,
     height: '0',
     color: '@tabColor',
     selectedColor: '@tabSelectedColor',

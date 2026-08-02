@@ -8,7 +8,7 @@ definePageMeta({
   },
 })
 
-const tokenStore = useTokenStore()
+const userStore = useUserStore()
 
 const loginForm = reactive<ILoginForm>({
   username: '',
@@ -24,7 +24,7 @@ async function handleSubmit() {
   }
   loading.value = true
   try {
-    await tokenStore.login({ ...loginForm })
+    await userStore.login({ ...loginForm })
     // 登录成功后回首页
     uni.reLaunch({ url: HOME_PAGE })
   }

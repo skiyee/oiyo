@@ -6,18 +6,17 @@ definePageMeta({
   },
 })
 
-const tokenStore = useTokenStore()
 const userStore = useUserStore()
 
 const userInfo = computed(() => userStore.userInfo)
-const hasLogin = computed(() => tokenStore.hasLogin)
+const hasLogin = computed(() => userStore.hasLogin)
 
 function handleLogin() {
   uni.navigateTo({ url: '/pages/login/index' })
 }
 
 function handleLogout() {
-  tokenStore.logout()
+  userStore.logout()
 }
 </script>
 

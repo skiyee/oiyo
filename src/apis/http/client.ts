@@ -18,6 +18,7 @@ import type { HttpResponse } from '@skiyee/oiyo'
 import type { IDoubleTokenRes } from '../types/user'
 import type { IResponse } from './types'
 
+import { clearTokenInfo, getRefreshToken, getValidToken, setTokenInfo } from './auth'
 import { HttpErrorType, ResultEnum } from './enum'
 import { createHttpError, getResponseMessage, isSuccessResultCode, resolveBaseURL, ShowMessage } from './utils'
 
@@ -37,8 +38,7 @@ export const client = createHttp({
   },
   // 请求前拦截：注入鉴权头
   onRequest({ options }) {
-    const tokenStore = useTokenStore()
-    const token = tokenStore.updateNowTime().validToken
+    const token = getValidToken()
     if (token) {
       options.headers = {
         ...options.headers,
@@ -73,10 +73,6 @@ export const client = createHttp({
     // 检查是否是401错误（业务码401）
     if (code === ResultEnum.Unauthorized) {
       response.data = await handleUnauthorized(resource, options, response)
-      return
-    }
-
-    if (options._action === 'download') {
       return
     }
 
@@ -149,16 +145,14 @@ async function handleUnauthorized(
   options: HttpOptions,
   response: HttpResponse,
 ): Promise<any> {
-  const tokenStore = useTokenStore()
-
   const responseStatusCode = response.statusCode
   const responseData = response.data as IResponse<any>
 
   const code = responseData?.code
 
   if (!isDoubleTokenMode) {
-    // 未启用双 token 策略，清理用户信息，跳转到登录页
-    tokenStore.logout()
+    // 未启用双 token 策略，清理鉴权信息，跳转到登录页
+    clearTokenInfo()
 
     toLoginPage()
 
@@ -173,9 +167,9 @@ async function handleUnauthorized(
   }
 
   /* -------- 无感刷新 token ----------- */
-  const { refreshToken } = (tokenStore.tokenInfo as IDoubleTokenRes) || {}
+  const refreshTokenValue = getRefreshToken()
   // 没有 refreshToken 无从刷新，直接抛鉴权错误
-  if (!refreshToken) {
+  if (!refreshTokenValue) {
     throw createHttpError({
       type: HttpErrorType.Auth,
       code,
@@ -196,24 +190,32 @@ async function handleUnauthorized(
   // 未在刷新中，发起刷新 token 请求
   if (!refreshing) {
     refreshing = true
+
     try {
-      await tokenStore.refreshToken()
+      await refreshTokenRequest(refreshTokenValue)
+
       refreshing = false
+
       nextTick(() => {
         uni.hideToast()
         uni.showToast({ title: 'token 刷新成功', icon: 'none' })
       })
+
       // 刷新成功，重放队列里的所有请求
       taskQueue.forEach(task => task())
     }
     catch (refreshErr) {
-      console.error('刷新 token 失败:', refreshErr)
       refreshing = false
+
+      console.error('刷新 token 失败:', refreshErr)
+
       nextTick(() => {
         uni.hideToast()
         uni.showToast({ title: '登录已过期，请重新登录', icon: 'none' })
       })
-      await tokenStore.logout()
+
+      clearTokenInfo()
+
       setTimeout(() => {
         toLoginPage()
       }, 2000)
@@ -225,6 +227,22 @@ async function handleUnauthorized(
   }
 
   return queued
+}
+
+/**
+ * 刷新 token 请求。
+ *
+ * 直接用 `client` 自身发起（而非 `userApi.refreshToken`），避免循环依赖；刷新成功后写回鉴权状态。
+ */
+async function refreshTokenRequest(refreshTokenValue: string): Promise<IDoubleTokenRes> {
+  const res = await client.request<IDoubleTokenRes>('/auth/refreshToken', {
+    method: 'POST',
+    body: { refreshToken: refreshTokenValue },
+  })
+
+  setTokenInfo(res)
+
+  return res
 }
 
 /** 重放原请求 */

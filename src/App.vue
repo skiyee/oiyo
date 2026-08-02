@@ -42,7 +42,15 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <OiyoLayout>
-    <OiyoPage />
-  </OiyoLayout>
+  <div class="overflow-hidden">
+    <OiyoLayout>
+      <OiyoPage />
+    </OiyoLayout>
+  </div>
 </template>
+
+<style>
+page {
+  background-color: #010a17;
+}
+</style>

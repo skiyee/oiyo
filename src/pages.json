@@ -1,16 +1,16 @@
 {
   "globalStyle": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#010A17",
     "navigationStyle": "default",
     "navigationBarTitleText": "oiyo-unibest",
-    "navigationBarBackgroundColor": "#F8FAFC",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#010A17",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "custom": true,
     "color": "#999999",
     "selectedColor": "#018d71",
-    "backgroundColor": "#F8F8F8",
+    "backgroundColor": "#010a17",
     "borderStyle": "black",
     "height": "50px",
     "fontSize": "10px",

@@ -149,7 +149,7 @@ const _tabbar: TabBarConfig = {
   custom: selectedTabbarStrategy === TABBAR_STRATEGY_MAP.CUSTOM_TABBAR,
   color: '#999999',
   selectedColor: '#018d71',
-  backgroundColor: '#F8F8F8',
+  backgroundColor: '#010a17',
   borderStyle: 'black',
   height: '50px',
   fontSize: '10px',

@@ -6,13 +6,13 @@ import { tabBar } from './tabbar/config'
 export default definePagesConfig({
   globalStyle: {
     // 页面背景配置
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#010A17',
 
     // 导航栏配置
     navigationStyle: 'default',
     navigationBarTitleText: 'oiyo-unibest',
-    navigationBarBackgroundColor: '#F8FAFC',
-    navigationBarTextStyle: 'black',
+    navigationBarBackgroundColor: '#010A17',
+    navigationBarTextStyle: 'white',
   },
   // tabBar 视觉配置（沿用 unibest src/tabbar/config.ts 的配置）。
   // 采用自定义 tabbar：custom: true 隐藏原生渲染，实际 UI 由 src/tabbar/tabbar.vue（tabbar 布局）绘制。

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // i-carbon-code
-import { customTabbarEnable, needHideNativeTabbar, tabbarCacheEnable } from './config'
+import { customTabbarEnable, needHideNativeTabbar, tabBar, tabbarCacheEnable } from './config'
 import { tabbarList, tabbarStore } from './store'
 import TabbarItem from './TabBarItem.vue'
 
@@ -97,9 +97,9 @@ function getColorByIndex(index: number) {
 
 <template>
   <view v-if="customTabbarEnable" class="h-50px pb-safe">
-    <!-- 固定在底部的自定义 tabbar 容器（原 .border-and-fixed，改用 unocss 原子类） -->
+    <!-- 固定在底部的自定义 tabbar 容器 -->
     <view
-      class="fixed bottom-0 left-0 right-0 z-1000 box-border border-t border-t-#eee border-t-solid bg-white"
+      class="fixed bottom-0 left-0 right-0 z-1000 box-border border-t border-t-[#010a17] border-t-solid bg-[#010a17]"
       @touchmove.stop.prevent
     >
       <view class="h-50px flex items-center">

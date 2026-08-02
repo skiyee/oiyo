@@ -2,7 +2,10 @@ import { definePagesConfig, type TabBar } from '@skiyee/oiyo/config'
 
 import { tabBar } from './tabbar/config'
 
-// https://oiyo.js.org/docs/api/config/define-pages-config
+/**
+ * 全局性页面配置
+ * @see https://oiyo.js.org/docs/api/config/define-pages-config
+ */
 export default definePagesConfig({
   globalStyle: {
     // 页面背景配置

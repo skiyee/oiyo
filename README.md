@@ -66,11 +66,11 @@ pnpm dev
 
 ## 💞 社群
 
-我们目前提供社群，让每一个开发者都能参与最直接的交流：
+我们提供社群，让每一个开发者都能参与最直接的交流：
 
 - QQ群：[246107301](https://qm.qq.com/q/iVPctWtKQS)
 
-  <img src="./.github/assets/qq-qrcode-1.png" alt="Qiyo 交流群" style="width: 280px; height: auto;">
+  <img src="./.github/assets/qq-qrcode-1.png" alt="Qiyo 交流群" width="280">
 
 ## 💝 关于
 

@@ -30,7 +30,6 @@
     "@skiyee/oiyo": "latest",
     "dayjs": "1.11.10",
     "pinia": "2.3.1",
-    "pinia-plugin-persistedstate": "3.2.1",
     "vue-i18n": "9.1.9"
   },
   "devDependencies": {

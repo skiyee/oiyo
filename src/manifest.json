@@ -1,14 +1,14 @@
 {
-  "name": "@skiyee/oiyo",
+  "name": "@oiyo-example/minimal",
   "appid": "",
-  "description": "以降本增效、降低开发心智为目的 UniApp 增强型框架",
+  "description": "基于 Oiyo 框架的 UniApp 最简起手模板",
   "versionName": "1.0.0",
   "versionCode": "100",
   "transformPx": false,
   "h5": {
     "darkmode": true,
     "router": {
-      "base": "/"
+      "base": "./"
     }
   },
   "app-plus": {

@@ -1,33 +1,14 @@
-﻿<p align="center">
-  <img alt="logo" src="./.github/assets/logo.png" width="160">
-</p>
-<h1 align="center">Oiyo Starter</h1>
+﻿<img alt="logo" src="./.github/assets/og-image.png" width="100%"><br>
 
-<p align="center">
-  <strong>由 <a href="https://oiyo.js.org">Oiyo</a> 赋能的 Wot Stater 快速启动模板</strong>
-</p>
+# Oiyo Starter
 
-<p align="center">
-  <a href="https://oiyo.js.org/"><img src="https://img.shields.io/badge/Framework-Oiyo-4F46E5?style=flat-square" alt="Oiyo"></a>
-  <a href="https://wot-ui.cn/"><img src="https://img.shields.io/badge/UI-Wot_UI-1C64FD?style=flat-square" alt="Wot UI"></a>
-  <a href="https://oiyo.js.org/"><img src="https://img.shields.io/badge/Docs-oiyo.js.org-D47F24?style=flat-square" alt="Docs"></a>
-  <a href="https://pinia.vuejs.org/"><img src="https://img.shields.io/badge/State-Pinia-FFD859?style=flat-square" alt="Pinia"></a>
-  <a href="https://echarts.apache.org/"><img src="https://img.shields.io/badge/Charts-Uni_ECharts-299764?style=flat-square" alt="ECharts"></a>
-</p>
+由 <a href="https://oiyo.js.org">Oiyo</a> 赋能的 <a href="https://starter.wot-ui.cn">Wot Starter</a> 快速启动模板
 
-<p align="center">
-  <a href="https://oiyo.js.org/">📖 在线文档</a>
-  ·
-  <a href="#快速开始">🚀 快速开始</a>
-  ·
-  <a href="#项目结构">🔑 技术栈</a>
-</p>
-
----
+[在线文档](https://oiyo.js.org/) · [快速开始](#快速开始) · [项目结构](#项目结构) 
 
 ## 简介
 
-**Oiyo Starter** 是由 [Oiyo](https://oiyo.js.org) 框架赋能 Wot Starter 变体的快速启动模板，面向 UniApp 多端开发场景。
+**Oiyo Starter** 是由 Oiyo 框架赋能 Wot Starter 变体的快速启动模板，面向 UniApp 多端开发场景。
 
 它把页面元信息、布局、自动导入和工程约定整合在一起，让你从第一行业务代码开始，而不是从脚手架配置开始。
 

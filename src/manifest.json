@@ -1,7 +1,7 @@
 {
-  "name": "oiyo-unibest",
+  "name": "@oiyo-example/unibest",
   "appid": "",
-  "description": "颠覆以往认知的 UniApp 增强型工程框架",
+  "description": "由 Oiyo 框架赋能的新一代 Unibest 模板",
   "versionName": "1.0.0",
   "versionCode": "100",
   "transformPx": false,
@@ -9,7 +9,7 @@
   "locale": "auto",
   "h5": {
     "router": {
-      "base": "/"
+      "base": "./"
     }
   },
   "app-plus": {

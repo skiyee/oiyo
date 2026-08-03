@@ -1,22 +1,27 @@
 {
-  "name": "@skiyee/oiyo",
+  "name": "@oiyo-example/minimal",
   "type": "module",
   "version": "0.4.0",
-  "description": "一个以融合AI协作，提升开发体验，降低心智成本为三大理念的 UniApp 增强型工程框架",
+  "description": "基于 Oiyo 框架的 UniApp 最简起手模板",
   "author": {
     "name": "skiyee",
     "email": "319619193@qq.com",
-    "url": "https://skiyee.pages.dev"
+    "github": "https://github.com/skiyee",
+    "gitee": "https://gitee.com/skiyee"
   },
-  "funding": "https://github.com/skiyee/oiyo",
-  "homepage": "https://oiyo.pages.dev",
+  "funding": "https://github.com/skiyee/oiyo-starters",
+  "homepage": "https://oiyo.js.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skiyee/oiyo.git"
+    "url": "git+https://github.com/skiyee/oiyo-starters.git"
   },
   "bugs": {
-    "url": "https://github.com/skiyee/oiyo/issues"
+    "url": "https://github.com/skiyee/oiyo-starters/issues"
   },
+  "files": [
+    "dist/build/h5",
+    "src/"
+  ],
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0 <11.0.0"

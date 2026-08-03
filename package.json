@@ -1,8 +1,8 @@
 {
-  "name": "oiyo-unibest",
+  "name": "@oiyo-example/unibest",
   "type": "module",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "description": "由 Oiyo 框架赋能的新一代 Unibest 模板",
   "author": {
     "name": "skiyee",
     "website": "https://oiyo.js.org",
@@ -10,6 +10,10 @@
     "gitee": "https://gitee.com/skiyee"
   },
   "homepage": "https://oiyo.js.org",
+  "files": [
+    "dist/build/h5",
+    "src/"
+  ],
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=8.0.0 <11.0.0"

@@ -9,7 +9,15 @@
     "github": "https://github.com/skiyee",
     "gitee": "https://gitee.com/skiyee"
   },
+  "funding": "https://github.com/skiyee/oiyo-starters",
   "homepage": "https://oiyo.js.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skiyee/oiyo-starters.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skiyee/oiyo-starters/issues"
+  },
   "files": [
     "dist/build/h5",
     "src/"

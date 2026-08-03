@@ -1,7 +1,7 @@
 {
-  "name": "@wot-ui/oiyo-starter",
+  "name": "@oiyo-example/wot-starter",
   "appid": "",
-  "description": "颠覆以往认知的 UniApp 增强型工程框架",
+  "description": "由 Oiyo 赋能的 Wot Stater 快速启动模板",
   "versionName": "1.0.0",
   "versionCode": "100",
   "transformPx": false,
@@ -9,7 +9,7 @@
     "darkmode": true,
     "themeLocation": "theme.json",
     "router": {
-      "base": "/"
+      "base": "./"
     }
   },
   "app-plus": {

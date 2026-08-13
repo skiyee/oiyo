@@ -37,10 +37,14 @@ pnpm create oiyo@latest
 ```
 
 | 分支                                                                         | 命令                                    |
-|------------------------------------------------------------------------------|-----------------------------------------|
+| ---------------------------------------------------------------------------- | --------------------------------------- |
 | [main](https://github.com/skiyee/oiyo/tree/main) (最简模板)                  | pnpm create oiyo --preset=minimal       |
 | [unibest](https://github.com/skiyee/oiyo/tree/unibest) (Oiyo 赋能版)         | pnpm create oiyo --template=unibest     |
 | [wot-starter](https://github.com/skiyee/oiyo/tree/wot-starter) (Oiyo 赋能版) | pnpm create oiyo --template=wot-starter |
+
+|  平台  | 微信小程序 | 支付宝小程序 | 抖音小程序 | 小红书小程序 | H5  | IOS(vue) | Android(vue) |
+| :----: | :--------: | :----------: | :--------: | :----------: | :-: | :------: | :----------: |
+| UniApp |     √      |      √       |    待测    |     待测     |  √  |    √     |      √       |
 
 ## 📖 文档
 
@@ -60,8 +64,8 @@ Oiyo 官方文档: [oiyo.js.org/docs](https://oiyo.js.org/docs)
 
 作者: **sky [Skiyee]** - 切图仔、全干攻城猫、轮子砖家
 
-| 平台      | 链接                                             |
-|-----------|--------------------------------------------------|
+| 平台       | 链接                                             |
+| ---------- | ------------------------------------------------ |
 | 🌐 官网   | [oiyo.js.org](https://oiyo.js.org/)              |
 | 🐧 QQ     | [319619193](https://oiyo.js.org/)                |
 | 🗻 掘金   | [skiyee](https://juejin.cn/user/300614247782265) |

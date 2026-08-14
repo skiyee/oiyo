@@ -37,7 +37,7 @@ export const client = createHttp({
     'Content-Type': 'application/json',
   },
   // 请求前拦截：注入鉴权头
-  onRequest({ options }) {
+  onBeforeRequest({ options }) {
     const token = getValidToken()
     if (token) {
       options.headers = {
@@ -64,7 +64,7 @@ export const client = createHttp({
     throw httpError
   },
   // 业务错误码判定、解包业务 data、错误 toast、401 无感刷新
-  async onResponse({ resource, options, response }) {
+  async onResponseSuccess({ url, options, response }) {
     const responseStatusCode = response.statusCode
     const responseData = response.data
 
@@ -72,7 +72,7 @@ export const client = createHttp({
 
     // 检查是否是401错误（业务码401）
     if (code === ResultEnum.Unauthorized) {
-      response.data = await handleUnauthorized(resource, options, response)
+      response.data = await handleUnauthorized(url, options, response)
       return
     }
 
@@ -99,12 +99,12 @@ export const client = createHttp({
     // 成功：解包为内层业务 data
     response.data = responseData?.data
   },
-  async onResponseError({ resource, options, response }) {
+  async onResponseError({ url, options, response }) {
     const responseStatusCode = response.statusCode
 
     // 检查是否是401错误（响应码401）
     if (responseStatusCode === ResultEnum.Unauthorized) {
-      response.data = await handleUnauthorized(resource, options, response)
+      response.data = await handleUnauthorized(url, options, response)
       return
     }
 

@@ -9,13 +9,14 @@ declare module '@skiyee/oiyo/runtime' {
 
 export const PetClient = http.create({
   baseURL: import.meta.env.VITE_API_URL,
-  onRequest: (c) => {
+
+  onBeforeRequest: (c) => {
     console.log('onRequest hook: ', c.options)
   },
   onRequestError: (c) => {
     console.log('onRequestError hook: ', c)
   },
-  onResponse: (c) => {
+  onResponseSuccess: (c) => {
     console.log('onResponse hook: ', c)
   },
   onResponseError: (c) => {

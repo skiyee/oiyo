@@ -4,7 +4,7 @@
 
 由 <a href="https://oiyo.js.org">Oiyo</a> 赋能的 <a href="https://starter.wot-ui.cn">Wot Starter</a> 快速启动模板
 
-[在线文档](https://oiyo.js.org/) · [快速开始](#快速开始) · [项目结构](#项目结构) 
+[在线文档](https://oiyo.js.org/) · [快速开始](#快速开始) · [项目结构](#项目结构)
 
 ## 简介
 
@@ -13,7 +13,7 @@
 它把页面元信息、布局、自动导入和工程约定整合在一起，让你从第一行业务代码开始，而不是从脚手架配置开始。
 
 | 能力       | 说明                                                    |
-|------------|---------------------------------------------------------|
+| ---------- | ------------------------------------------------------- |
 | App.vue    | 应用级组件编写 `<template>` 以及 管理应用级共享状态     |
 | 约定式页面 | 页面内 `definePageMeta()`，自动生成路由与 `pages.json`  |
 | 布局系统   | `layouts/` + `layout` 元信息，TabBar / 默认布局开箱即用 |
@@ -27,7 +27,7 @@
 - **框架**：Oiyo · UniApp · Vue 3 · TypeScript · Vite
 - **UI**：Wot UI
 - **请求**：OiyoHttp
-- **路由**：OiyoRouter · @wot-ui/router 
+- **路由**：OiyoRouter · @wot-ui/router
 - **样式**：UniUnoCSS · SASS
 - **状态**：Pinia · PiniaPersist
 - **图表**：ECharts · UniEcharts
@@ -81,7 +81,7 @@ pnpm build:h5:production
 **sky [Skiyee]** - 切图仔、全干攻城猫、轮子砖家
 
 | 平台      | 链接                                             |
-|-----------|--------------------------------------------------|
+| --------- | ------------------------------------------------ |
 | 🌐 官网   | [oiyo.js.org](https://oiyo.js.org/)              |
 | 🐧 QQ     | [319619193](https://oiyo.js.org/)                |
 | 🗻 掘金   | [skiyee](https://juejin.cn/user/300614247782265) |
@@ -89,10 +89,18 @@ pnpm build:h5:production
 
 <img src="./.github/assets/wechat-qrcode-1.png" alt="公众号二维码" width="360">
 
+## 💖 赞赏
+
+<p align="center">
+  <a href="https://github.com/skiyee/sponsors">
+    <img alt="sponsors" src="https://cdn.jsdelivr.net/gh/skiyee/sponsors@main/oiyo-sponsors.svg"/>
+  </a>
+</p>
+
 ## 周边
 
 | 项目                                                                 | 描述                                                |
-|----------------------------------------------------------------------|-----------------------------------------------------|
+| -------------------------------------------------------------------- | --------------------------------------------------- |
 | [oiyo](https://github.com/skiyee/oiyo)                               | 颠覆以往认知的 UniApp 增强型工程框架                |
 | [wot-ui-intellisense](https://github.com/wot-ui/wot-ui-intellisense) | wot-ui vscode 代码提示插件                          |
 | [@wot-ui/router](https://github.com/wot-ui/my-uni)                   | 一个基于 vue3 和 typescript 的轻量级 uni-app 路由库 |

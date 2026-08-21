@@ -64,14 +64,22 @@ Oiyo 官方文档: [oiyo.js.org/docs](https://oiyo.js.org/docs)
 
 作者: **sky [Skiyee]** - 切图仔、全干攻城猫、轮子砖家
 
-| 平台       | 链接                                             |
-| ---------- | ------------------------------------------------ |
+| 平台      | 链接                                             |
+| --------- | ------------------------------------------------ |
 | 🌐 官网   | [oiyo.js.org](https://oiyo.js.org/)              |
 | 🐧 QQ     | [319619193](https://oiyo.js.org/)                |
 | 🗻 掘金   | [skiyee](https://juejin.cn/user/300614247782265) |
 | 💬 公众号 | 微信搜「天空言码」或扫码关注 ↓                   |
 
 <img src="./.github/assets/wechat-qrcode-1.png" alt="公众号二维码" width="360">
+
+## 💖 赞赏
+
+<p align="center">
+  <a href="https://github.com/skiyee/sponsors">
+    <img alt="sponsors" src="https://cdn.jsdelivr.net/gh/skiyee/sponsors@main/oiyo-sponsors.svg"/>
+  </a>
+</p>
 
 ## 🔗 外链
 

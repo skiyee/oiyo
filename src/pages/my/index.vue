@@ -1,5 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
+  middleware: 'logger',
   style: {
     navigationBarTitleText: '我的 - skiyee-oiyo',
   },

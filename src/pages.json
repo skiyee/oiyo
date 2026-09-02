@@ -23,7 +23,15 @@
       }
     },
     {
+      "path": "pages/login/index",
+      "layout": false,
+      "style": {
+        "navigationBarTitleText": "登录 - skiyee-oiyo"
+      }
+    },
+    {
       "path": "pages/my/index",
+      "middleware": "logger",
       "style": {
         "navigationBarTitleText": "我的 - skiyee-oiyo"
       },

@@ -7,4 +7,7 @@ export default defineConfig({
     UnoPlugin(),
     OiyoPlugin(),
   ],
+  server: {
+    host: true,
+  },
 })

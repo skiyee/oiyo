@@ -37,10 +37,10 @@
   },
   "dependencies": {
     "@skiyee/oiyo": "latest",
-    "@wot-ui/ui": "^2.2.0",
+    "@wot-ui/ui": "^2.3.2",
     "echarts": "^6.0.0",
     "pinia": "2.3.1",
-    "uni-echarts": "^2.2.5"
+    "uni-echarts": "^2.5.2"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.37",

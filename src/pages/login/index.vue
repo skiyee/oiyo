@@ -16,6 +16,18 @@ const loginForm = reactive<ILoginForm>({
 })
 
 const loading = ref(false)
+const redirect = ref(HOME_PAGE)
+
+onLoad((query) => {
+  if (typeof query?.redirect !== 'string') {
+    return
+  }
+
+  const target = ensureDecodeURIComponent(query.redirect)
+  if (target.startsWith('/') && target !== '/pages/login/index') {
+    redirect.value = target
+  }
+})
 
 async function handleSubmit() {
   if (!loginForm.username || !loginForm.password) {
@@ -25,8 +37,7 @@ async function handleSubmit() {
   loading.value = true
   try {
     await userStore.login({ ...loginForm })
-    // 登录成功后回首页
-    uni.reLaunch({ url: HOME_PAGE })
+    uni.reLaunch({ url: redirect.value })
   }
   catch {
     // 错误提示已在 store/http 层处理

@@ -44,6 +44,12 @@ export const nativeTabbarList: NativeTabBarItem[] = [
     text: '首页',
   },
   {
+    iconPath: 'static/tabbar/example.png',
+    selectedIconPath: 'static/tabbar/exampleHL.png',
+    pagePath: 'pages/about/index',
+    text: '关于',
+  },
+  {
     iconPath: 'static/tabbar/personal.png',
     selectedIconPath: 'static/tabbar/personalHL.png',
     pagePath: 'pages/me/index',
@@ -83,7 +89,6 @@ export const customTabbarList: CustomTabBarItem[] = [
     iconType: 'unocss',
     icon: 'i-carbon-menu',
     // badge: 10,
-    roles: ['admin'],
   },
   {
     pagePath: 'pages/me/index',

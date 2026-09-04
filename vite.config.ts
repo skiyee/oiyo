@@ -7,4 +7,7 @@ export default defineConfig({
     UniUnoCSS(),
     OiyoPlugin(),
   ],
+  server: {
+    host: true,
+  },
 })

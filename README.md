@@ -38,7 +38,7 @@ pnpm create oiyo@latest
 
 | 分支                                                                         | 命令                                    |
 | ---------------------------------------------------------------------------- | --------------------------------------- |
-| [main](https://github.com/skiyee/oiyo/tree/main) (最简模板)                  | pnpm create oiyo --preset=minimal       |
+| [main](https://github.com/skiyee/oiyo/tree/main) (最佳模板)                  | pnpm create oiyo --template=standard    |
 | [unibest](https://github.com/skiyee/oiyo/tree/unibest) (Oiyo 赋能版)         | pnpm create oiyo --template=unibest     |
 | [wot-starter](https://github.com/skiyee/oiyo/tree/wot-starter) (Oiyo 赋能版) | pnpm create oiyo --template=wot-starter |
 
